@@ -1,9 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-global.pages_found = 0;
-canattack = true;
-
-global.total_pages = 4;
+obj_ghost.visible = true
+instance_destroy(other)
 
 

@@ -111,3 +111,9 @@ if (keyboard_check_pressed(ord("R"))){
 	room_restart();
 }
 
+//checking if all music pages has been picked
+if( global.pages_found== global.total_pages){
+	room_goto_next()
+}
+
+

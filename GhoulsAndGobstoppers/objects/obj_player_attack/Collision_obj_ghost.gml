@@ -7,3 +7,5 @@ if(other.canattack == true)
 	other.frames_since_last_attack = 0;
 	other.alarm[0] = other.waiting_period;
 }
+
+instance_destroy(other)
