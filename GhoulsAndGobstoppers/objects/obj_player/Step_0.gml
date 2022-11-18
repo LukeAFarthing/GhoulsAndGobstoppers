@@ -115,5 +115,8 @@ if (keyboard_check_pressed(ord("R"))){
 if( global.pages_found== global.total_pages){
 	room_goto_next()
 }
+if( hope <= 0){
+	room_goto(rm_lose)
+}
 
 
