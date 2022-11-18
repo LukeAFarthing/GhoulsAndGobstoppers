@@ -2,27 +2,55 @@
 // You can write your code in this editor
 
 
-if (hp <= 0){
+if (hope <= 0){
 	instance_destroy();
 }
 
 if (canattack == true) {
 	//Walking
-	if (keyboard_check(vk_right) and (!instance_place(x+25,y,obj_block))) {
+	if(keyboard_check(vk_up) and keyboard_check(vk_right) and (!instance_place(x+25,y-25,obj_block))) {
+		// Walk up and right
+		//sprite_index = spr_player_walk;
+		x += spd;
+		y -= spd;
+		image_xscale = 1;
+	}else if(keyboard_check(vk_up) and keyboard_check(vk_left) and (!instance_place(x-25,y-25,obj_block))) {
+		// Walk up and left
+		//sprite_index = spr_player_walk;
+		x -= spd;
+		y -= spd;
+		image_xscale = -1;
+	}else if(keyboard_check(vk_down) and keyboard_check(vk_right) and (!instance_place(x+25,y+25,obj_block))) {
+		// Walk down and right
+		//sprite_index = spr_player_walk;
+		x += spd;
+		y += spd;
+		image_xscale = 1;
+	}else if(keyboard_check(vk_down) and keyboard_check(vk_left) and (!instance_place(x-25,y+25,obj_block))) {
+		// Walk down and left
+		//sprite_index = spr_player_walk;
+		x -= spd;
+		y += spd;
+		image_xscale = -1;
+	}else if (keyboard_check(vk_right) and (!instance_place(x+25,y,obj_block))) {
+		// Walk right
 		// sprite_index = spr_player_walk;
-		x += hsp;
+		x += spd;
 		image_xscale = 1;
 	}else if(keyboard_check(vk_left)and (!instance_place(x-25,y,obj_block))) {
+		// Walk left
 		//sprite_index = spr_player_walk;
-		x -= hsp;
+		x -= spd;
 		image_xscale = -1;
 	}else if(keyboard_check(vk_up)and (!instance_place(x,y-25,obj_block))) {
+		// Walk up
 		//sprite_index = spr_player_walk;
-		y -= hsp;
+		y -= spd;
 		//image_xscale = -1;
 	}else if(keyboard_check(vk_down)and (!instance_place(x,y+25,obj_block))) {
+		// Walk down
 		//sprite_index = spr_player_walk;
-		y += hsp;
+		y += spd;
 		//image_xscale = -1;
 	}else {
 		sprite_index = spr_player;
@@ -54,16 +82,16 @@ if (canattack == true) {
 	}
 	*/
 
-	/*
+	
 	// Attacking
 	if (keyboard_check_pressed(ord("Z"))) {
-		instance_create_layer(x + (550 * image_xscale), y, "Instances", obj_player_attack)
+		player_attack_id = instance_create_layer(x, y, "Instances", obj_player_attack);
 		canattack = false;
 		alarm[1] = obj_player_attack.attackduration;
-		sprite_index = spr_player_twitch;
-		audio_play_sound(snd_cut, 900, false);
+		// sprite_index = spr_player_twitch;
+		// audio_play_sound(snd_cut, 900, false);
 	}
-	*/
+
 }
 
 else {
