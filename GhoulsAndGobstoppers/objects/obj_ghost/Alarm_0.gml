@@ -3,4 +3,4 @@
 
 
 canattack = true;
-
+sprite_index = spr_ghost_walk;

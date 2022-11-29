@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_ghost",
   "spriteId": {
-    "name": "spr_ghost_dance",
-    "path": "sprites/spr_ghost_dance/spr_ghost_dance.yy",
+    "name": "spr_ghost_walk",
+    "path": "sprites/spr_ghost_walk/spr_ghost_walk.yy",
   },
   "solid": false,
   "visible": false,

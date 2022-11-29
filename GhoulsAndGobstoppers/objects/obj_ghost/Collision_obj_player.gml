@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-if(canattack = true)
+if(canattack = true && global.nighttime == true)
 {
 	obj_player.hope -= 15;
 	canattack = false;

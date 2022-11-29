@@ -7,54 +7,63 @@ if (hope <= 0){
 }
 
 if (canattack == true) {
+	//image_speed = 0;
 	//Walking
 	if(keyboard_check(vk_up) and keyboard_check(vk_right) and (!instance_place(x+25,y-25,obj_block))) {
 		// Walk up and right
-		//sprite_index = spr_player_walk;
+		sprite_index = spr_player_walk_back;
 		x += spd;
 		y -= spd;
-		image_xscale = 1;
+		//image_xscale = 1;
+		//image_speed = 7;
 	}else if(keyboard_check(vk_up) and keyboard_check(vk_left) and (!instance_place(x-25,y-25,obj_block))) {
 		// Walk up and left
-		//sprite_index = spr_player_walk;
+		sprite_index = spr_player_walk_back;
 		x -= spd;
 		y -= spd;
-		image_xscale = -1;
+		//image_xscale = -1;
+		//image_speed = 7;
 	}else if(keyboard_check(vk_down) and keyboard_check(vk_right) and (!instance_place(x+25,y+25,obj_block))) {
 		// Walk down and right
-		//sprite_index = spr_player_walk;
+		sprite_index = spr_player_walk;
 		x += spd;
 		y += spd;
 		image_xscale = 1;
+		//image_speed = 7;
 	}else if(keyboard_check(vk_down) and keyboard_check(vk_left) and (!instance_place(x-25,y+25,obj_block))) {
 		// Walk down and left
-		//sprite_index = spr_player_walk;
+		sprite_index = spr_player_walk;
 		x -= spd;
 		y += spd;
 		image_xscale = -1;
+		//image_speed = 7;
 	}else if (keyboard_check(vk_right) and (!instance_place(x+25,y,obj_block))) {
 		// Walk right
-		// sprite_index = spr_player_walk;
+		sprite_index = spr_player_walk;
 		x += spd;
 		image_xscale = 1;
+		//image_speed = 7;
 	}else if(keyboard_check(vk_left)and (!instance_place(x-25,y,obj_block))) {
 		// Walk left
-		//sprite_index = spr_player_walk;
+		sprite_index = spr_player_walk;
 		x -= spd;
 		image_xscale = -1;
+		//image_speed = 7;
 	}else if(keyboard_check(vk_up)and (!instance_place(x,y-25,obj_block))) {
 		// Walk up
-		//sprite_index = spr_player_walk;
+		sprite_index = spr_player_walk_back;
 		y -= spd;
 		//image_xscale = -1;
+		//image_speed = 7;
 	}else if(keyboard_check(vk_down)and (!instance_place(x,y+25,obj_block))) {
 		// Walk down
-		//sprite_index = spr_player_walk;
+		sprite_index = spr_player_walk;
 		y += spd;
 		//image_xscale = -1;
+		//image_speed = 7;
 	}else {
 		sprite_index = spr_player;
-		//image_speed = 10;
+		//image_speed = 0;
 	}
 		
 	/*
@@ -82,15 +91,35 @@ if (canattack == true) {
 	}
 	*/
 
+	if(global.hasguitar) {
+		// Attacking
+		if (keyboard_check_pressed(ord("Z"))) {
+			player_attack_id = instance_create_layer(x, y, "Instances", obj_player_attack);
+			canattack = false;
+			alarm[1] = obj_player_attack.attackduration;
+			// sprite_index = spr_player_twitch;
+			// audio_play_sound(snd_cut, 900, false);
+		}
 	
-	// Attacking
-	if (keyboard_check_pressed(ord("Z"))) {
-		player_attack_id = instance_create_layer(x, y, "Instances", obj_player_attack);
-		canattack = false;
-		alarm[1] = obj_player_attack.attackduration;
-		// sprite_index = spr_player_twitch;
-		// audio_play_sound(snd_cut, 900, false);
+		// Changing time
+		if (keyboard_check_pressed(ord("A"))) {
+			if(global.nighttime) {
+				global.nighttime = false;
+				canattack = false;
+				alarm[2] = 60;
+			}
+			else {
+				global.nighttime = true;
+				canattack = false;
+				alarm[2] = 60;
+			}
+			
+			// sprite_index = spr_player_twitch;
+			// audio_play_sound(snd_cut, 900, false);
+		}
+		//obj_ghost.visible = true
 	}
+	
 
 }
 
