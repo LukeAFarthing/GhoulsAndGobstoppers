@@ -113,7 +113,7 @@ if (keyboard_check_pressed(ord("R"))){
 
 //checking if all music pages has been picked
 if( global.pages_found== global.total_pages){
-	room_goto_next()
+	room_goto(rm_win)
 }
 if( hope <= 0){
 	room_goto(rm_lose)
