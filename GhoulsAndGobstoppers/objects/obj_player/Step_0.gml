@@ -97,8 +97,8 @@ if (canattack == true) {
 			player_attack_id = instance_create_layer(x, y, "Instances", obj_player_attack);
 			canattack = false;
 			alarm[1] = obj_player_attack.attackduration;
-			// sprite_index = spr_player_twitch;
-			// audio_play_sound(snd_cut, 900, false);
+			sprite_index = spr_player_strum_2;
+			audio_play_sound(snd_player_strum_2, 900, false);
 		}
 	
 		// Changing time
@@ -114,8 +114,11 @@ if (canattack == true) {
 				alarm[2] = 60;
 			}
 			
-			// sprite_index = spr_player_twitch;
-			// audio_play_sound(snd_cut, 900, false);
+			sprite_index = spr_player_strum_1;
+			audio_play_sound(snd_player_strum_1, 900, false);;
+			//audio_sound_gain(snd, 500, 0);
+			//audio_sound_gain(snd, -100, 5000);
+			
 		}
 		//obj_ghost.visible = true
 	}
