@@ -102,7 +102,7 @@ if (canattack == true) {
 		}
 	
 		// Changing time
-		if (keyboard_check_pressed(ord("A"))) {
+		if (keyboard_check_pressed(ord("A")) && !instance_place(x,y,obj_guitar_jammer)) {
 			if(global.nighttime) {
 				global.nighttime = false;
 				canattack = false;
