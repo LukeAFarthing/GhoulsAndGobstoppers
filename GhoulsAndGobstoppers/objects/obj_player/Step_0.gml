@@ -107,11 +107,16 @@ if (canattack == true) {
 				global.nighttime = false;
 				canattack = false;
 				alarm[2] = 60;
+				global.a = 0.0;
 			}
 			else {
 				global.nighttime = true;
 				canattack = false;
 				alarm[2] = 60;
+				time_source = time_source_create(time_source_game,0.05,time_source_units_seconds,function(){
+				global.a += 0.01;
+				},[],-1);
+				time_source_start(time_source);
 			}
 			
 			sprite_index = spr_player_strum_1;
@@ -150,5 +155,11 @@ if( global.pages_found== global.total_pages){
 if( hope <= 0){
 	room_goto(rm_lose)
 }
+
+if(global.a > 0.5){
+	time_source_destroy(time_source);
+}
+
+
 
 
