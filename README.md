@@ -9,6 +9,8 @@ GhoulsAndGobstoppers is an isometric puzzle game based on the works of Earthboun
 ## Controls
 #### By using the ARROW KEYS you will be able to move Billy around the screen, to maneuver past the ghosts.
 #### Pressing X will stun the ghosts for a short duration, allowing you time to grab items around the stage.
+#### Pressing A to activate Ghost Vision. This mode allows you to go to places that were prevoulsy unreachable, but 
+beware, ghost have the ability to attack you while you are in this mode.
 ## License 
 all assets were created and published by the THUNDERCATS &copy;
 
