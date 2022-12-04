@@ -136,12 +136,24 @@ else {
 	vspeed = 0;
 }
 
-/*
+
 // Cheats
-if (keyboard_check_pressed(ord("A"))) {
-	global.saved_otters = 4;
+
+//Restore HP
+if (keyboard_check_pressed(ord("X"))) {
+	hope += 100
 }
-*/
+
+//Speed Boost
+if (keyboard_check_pressed(ord("C"))) {
+	spd += 3
+}
+
+//Insta Win
+if (keyboard_check_pressed(ord("V"))) {
+	global.pages_found = global.total_pages
+}
+
 
 // Game Restart
 if (keyboard_check_pressed(ord("R"))){
