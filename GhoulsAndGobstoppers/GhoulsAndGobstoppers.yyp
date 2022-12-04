@@ -30,6 +30,7 @@
     {"id":{"name":"fnt_spooky_font","path":"fonts/fnt_spooky_font/fnt_spooky_font.yy",},"order":0,},
     {"id":{"name":"Shader1","path":"shaders/Shader1/Shader1.yy",},"order":0,},
     {"id":{"name":"snd_attack","path":"sounds/snd_attack/snd_attack.yy",},"order":8,},
+    {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},"order":26,},
     {"id":{"name":"obj_guitar_jammer","path":"objects/obj_guitar_jammer/obj_guitar_jammer.yy",},"order":15,},
     {"id":{"name":"obj_title_menu","path":"objects/obj_title_menu/obj_title_menu.yy",},"order":13,},
     {"id":{"name":"ghost_path02","path":"paths/ghost_path02/ghost_path02.yy",},"order":1,},
