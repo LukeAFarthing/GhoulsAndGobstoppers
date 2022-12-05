@@ -7,5 +7,5 @@
 // Inherit the parent event
 event_inherited();
 
-path_start(ghost_path01,hsp,path_action_restart,true);
+path_start(patrolle_path,hsp,path_action_restart,true);
 

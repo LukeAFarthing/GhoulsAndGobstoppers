@@ -141,19 +141,21 @@ else {
 
 //Restore HP
 if (keyboard_check_pressed(ord("X"))) {
-	hope += 100
+	hope += 100;
 }
 
 //Speed Boost
 if (keyboard_check_pressed(ord("C"))) {
-	spd += 3
+	if(spd < 50)
+	{
+		spd += 3;
+	}
 }
 
 //Insta Win
 if (keyboard_check_pressed(ord("V"))) {
 	global.pages_found = global.total_pages
 }
-
 
 // Game Restart
 if (keyboard_check_pressed(ord("R"))){
