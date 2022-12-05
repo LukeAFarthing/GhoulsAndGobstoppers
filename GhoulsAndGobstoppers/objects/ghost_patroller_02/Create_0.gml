@@ -5,6 +5,6 @@
 event_inherited();
 
 // Inherit the parent event
-path_start(ghost_path02,hsp,path_action_restart,true);
+path_start(Path1, 4, path_action_reverse, true);
 
 

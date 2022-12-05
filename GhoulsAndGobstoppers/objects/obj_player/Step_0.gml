@@ -141,7 +141,7 @@ else {
 
 //Restore HP
 if (keyboard_check_pressed(ord("X"))) {
-	hope += 100;
+	hope += 50;
 }
 
 //Speed Boost

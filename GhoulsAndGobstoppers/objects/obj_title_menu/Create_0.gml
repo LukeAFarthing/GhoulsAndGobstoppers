@@ -5,7 +5,7 @@ width = 300;
 height = 200;
 
 op_border = 15;
-op_space = 25;
+op_space = 50;
 
 pos = 0;
 
