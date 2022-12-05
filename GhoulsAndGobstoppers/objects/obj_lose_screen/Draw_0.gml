@@ -5,8 +5,8 @@ draw_sprite_ext(sprite_index, image_index, x, y, width/sprite_width, height/spri
 
 draw_set_color(c_white)
 draw_set_font(fnt_spooky_font)
-draw_set_valign(fa_top)
-draw_set_halign(fa_left)
+//draw_set_valign(fa_top)
+//draw_set_halign(fa_left)
 
 for (var i = 0; i < op_length; i++){
 	
