@@ -18,6 +18,8 @@ Ghouls and Gobstoppers is an isometric puzzle game based on the works of Earthbo
 #### By pressing A you'll regain a large amount of health
 #### By pressing C you can keep increasing the speed of the character
 #### By pressing V you will instanly win the game (not much of a cheat is it)
-all assets were created and published by the THUNDERCATS &copy;
+## License
+all assets were created and published by the THUNDERCATS 
+&copy;
 
 
