@@ -15,6 +15,7 @@
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"snd_player_strum_2","path":"sounds/snd_player_strum_2/snd_player_strum_2.yy",},"order":1,},
     {"id":{"name":"spr_block","path":"sprites/spr_block/spr_block.yy",},"order":1,},
+    {"id":{"name":"rm_story","path":"rooms/rm_story/rm_story.yy",},"order":6,},
     {"id":{"name":"obj_win_theme","path":"objects/obj_win_theme/obj_win_theme.yy",},"order":25,},
     {"id":{"name":"spr_tree_2","path":"sprites/spr_tree_2/spr_tree_2.yy",},"order":15,},
     {"id":{"name":"obj_win_screen","path":"objects/obj_win_screen/obj_win_screen.yy",},"order":14,},
@@ -78,6 +79,7 @@
     {"id":{"name":"spr_player_walk_back","path":"sprites/spr_player_walk_back/spr_player_walk_back.yy",},"order":10,},
     {"id":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},"order":1,},
     {"id":{"name":"spr_guitar","path":"sprites/spr_guitar/spr_guitar.yy",},"order":5,},
+    {"id":{"name":"obj_story_menu","path":"objects/obj_story_menu/obj_story_menu.yy",},"order":35,},
     {"id":{"name":"obj_ghost_bush","path":"objects/obj_ghost_bush/obj_ghost_bush.yy",},"order":17,},
     {"id":{"name":"rm_practice_level","path":"rooms/rm_practice_level/rm_practice_level.yy",},"order":0,},
   ],
@@ -94,6 +96,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
+    {"roomId":{"name":"rm_story","path":"rooms/rm_story/rm_story.yy",},},
     {"roomId":{"name":"rm_level","path":"rooms/rm_level/rm_level.yy",},},
     {"roomId":{"name":"rm_lose","path":"rooms/rm_lose/rm_lose.yy",},},
     {"roomId":{"name":"rm_win","path":"rooms/rm_win/rm_win.yy",},},
