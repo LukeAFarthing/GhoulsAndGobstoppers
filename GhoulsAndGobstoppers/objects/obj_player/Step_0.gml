@@ -106,13 +106,13 @@ if (canattack == true) {
 			if(global.nighttime) {
 				global.nighttime = false;
 				canattack = false;
-				alarm[2] = 60;
+				alarm[2] = 180;
 				global.a = 0.0;
 			}
 			else {
 				global.nighttime = true;
 				canattack = false;
-				alarm[2] = 60;
+				alarm[2] = 180;
 				time_source = time_source_create(time_source_game,0.05,time_source_units_seconds,function(){
 				global.a += 0.01;
 				},[],-1);
@@ -141,7 +141,7 @@ else {
 
 //Restore HP
 if (keyboard_check_pressed(ord("X"))) {
-	hope += 50;
+	hope = 100;
 }
 
 //Speed Boost
